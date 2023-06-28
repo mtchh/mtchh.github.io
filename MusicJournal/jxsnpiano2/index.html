@@ -1,124 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is my little studio, tucked away at the corner of the internet.">
-    <meta name="keywords" content="mtch. lofi, lofi, mtch., mtch music, mtch. music">
-    <title>mtch's studio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-    <div id="container">
-      <table>
-        <tbody>
-          <tr>
-            <td id="maintd">
-              <div class="box" id="mainbox3" style="margin-top: 10px;">
-                <img style="vertical-align: sub; margin-right: px;" src="/images/earthsmol.png" class="earthicon">
-                <h2 style="display:inline">Music journal</h2>
-                <p>
-                  <b>19/06/23 - jxsnpiano2.proj (WIP)</b>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is my little studio, tucked away at the corner of the internet.">
+  <meta name="keywords" content="mtch. lofi, lofi, mtch., mtch music, mtch. music">
+  <title>mtch's studio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain attribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          };
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="container">
+    <table>
+      <tbody>
+        <tr>
+          <td id="maintd">
+            <div class="box" id="mainbox3" style="margin-top: 10px;">
+              <img style="vertical-align: sub; margin-right: px;" src="/images/earthsmol.png" class="earthicon">
+              <h2 style="display:inline">Music journal</h2>
+              <p>
+                <b style="font-size: larger;">jxsnpiano2.proj (WIP)</b>
+                <br>
+                19/06/23
+              </p>
+              <p>I got sent a little piano loop by my good friend <a
+                  href="https://open.spotify.com/artist/7BeumVAbvoeULv5kuq5lhS?si=p3XbA1AZRoCEXfYcSzqUFg"
+                  target="_blank" style="color: rgb(111, 186, 236);">jxsn</a>. </p>
+              <div id="discord">
+                <img style="vertical-align: middle; margin-right: 5px;" src="/MusicJournal/images/jxsn.webp"
+                  class="jxsnicon">
+                <p style="display: inline;">
+                  <b>jxsn</b>
                 </p>
-                <p>I got sent a little piano loop by my good friend <a href="https://open.spotify.com/artist/7BeumVAbvoeULv5kuq5lhS?si=p3XbA1AZRoCEXfYcSzqUFg" target="_blank" style="color: rgb(111, 186, 236);">jxsn</a>. </p>
-                <div id="discord">
-                  <img style="vertical-align: middle; margin-right: 5px;" src="/MusicJournal/images/jxsn.webp" class="jxsnicon">
-                  <p style="display: inline;">
-                    <b>jxsn</b>
-                  </p>
-                  <small> - 06/16/2023 11:16 PM</small>
-                  </p>
-                  <p>&nbsp;&nbsp;&nbsp; hey man, heres a little idea from today<br> &nbsp;&nbsp;&nbsp; veryy simple but could turn into something haha<br>
-                  </p>
-                </div>
-                <br>
-                <audio controls controlsList="nodownload">"
-                  <source src="/MusicJournal/audio/jxsnpiano2/jxsn_progression_63_vpm_Eb.mp3" type="audio/mp3">
-                </audio>
-                <br>
-                <br>
-                <div id="discord">
-                  <img style="vertical-align: middle; margin-right: 5px;" src="/MusicJournal/images/mtch.webp" class="jxsnicon">
+                <small> - 06/16/2023 11:16 PM</small>
+                </p>
+                <p>&nbsp;&nbsp;&nbsp; hey man, heres a little idea from today<br> &nbsp;&nbsp;&nbsp; veryy simple but
+                  could turn into something haha<br>
+                </p>
+              </div>
+              <br>
+              <audio controls controlsList="nodownload">"
+                <source src="/MusicJournal/audio/jxsnpiano2/jxsn_progression_63_vpm_Eb.mp3" type="audio/mp3">
+              </audio>
+              <br>
+              <br>
+              <div id="discord">
+                <img style="vertical-align: middle; margin-right: 5px;" src="/MusicJournal/images/mtch.webp"
+                  class="jxsnicon">
                 <p style="display: inline;">
                   <b>mtch.</b>
                 </p>
                 <small> - 06/19/2023 11:45 AM</small>
                 </p>
-                  </p>
-                  <p>&nbsp;&nbsp;&nbsp; love it <br> &nbsp;&nbsp;&nbsp; ill try some things ;) <br>
-                  </p>
-                </div>
-                <p>I worked on it for about 40 minutes, replaced his piano preset with mine and ended up with this.</p>
-                <audio controls controlsList="nodownload">"
-                  <source src="/MusicJournal/audio/jxsnpiano2/jxsnpiano2v1.mp3" type="audio/mp3">
-                </audio>
-                <br>
-                <br>
-                <div id="discord">
-                  <img style="vertical-align: middle; margin-right: 5px;" src="/MusicJournal/images/jxsn.webp" class="jxsnicon">
-                  <p style="display: inline;">
-                    <b>jxsn</b>
-                  </p>
-                  <small> - 06/19/2023 1:39 PM</small>
-                  </p>
-                  <p>&nbsp;&nbsp;&nbsp; sickk! <br> &nbsp;&nbsp;&nbsp; nice and moody <br>
-                  </p>
-                </div>
-                <p>I then changed the structure and tweaked some velocities before sending v2 with some very minor changes.</p>
-                <audio controls controlsList="nodownload">"
-                  <source src="/MusicJournal/audio/jxsnpiano2/jxsnpiano2v2.mp3" type="audio/mp3">
-                </audio>
-                <br>
-                <br>
-                <p>That's all for now, I exported the stems and sent them out.</p>
-                <p>I'll update when I get stems back.</p>
-              </div>
-              
-            </td>
-            <td id="menutd">
-              <div class="box" id="links">
-                <h2 style="margin-bottom: 15px; margin-top: 2px; color: rgb(117, 177, 255);">Links</h2>
-                <a class="navlink" href="/" id="home-link">📁 Home</a>
-                <br>
-                <a class="navlink" href="/About/about.html" id="about-link">📁 About me</a>
-                <br>
-                <a class="navlink" href="/MusicJournal/index.html">📁 Music Journal</a>
-                <br>
-              </div>
-              <div class="box" style="margin-top: 10px;margin-bottom: 10px;">
-                <b>Latest Release:</b>
-                <br>
-                <br>
-                <a href="https://open.spotify.com/track/6owxwBYb2JUq8kW9m0IckI?si=6e7480710f9d46fb" id="songlink" target="_blank">
-                  <div id="musicbox">
-                    <img src="/images/findingadventure.jpg" alt="finding adventure album art" width="50" height="50" id="albumcover">
-                    <span id="songname">Adventure <br> Awaits</span>
-                    <span id="artist" style="display: block;">
-                      <small>mtch.</small>
-                    </span>
-                  </div>
-                </a>
-                <span style="color:gray; display: inline-block;">Released 29th May</span>
-                <span style="color:gray; display: inline-block;">
-                  <small>The Jazz Hop Cafe</small>
-                </span>
-              </div>
-              <div class="box centerbox" style="margin-top: 10px">
-                <img src="/images/duolingo.png" class="duoicon" alt="duolingo streak fire icon">
-                <p style="display: inline" class="gradient-text">Duolingo Streak:</p>
-                <br>
-                <div class="boxcounter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                <p style="display: inline;">days &nbsp;<img src="/images/fr.png" alt="french flag" style="height: 14px; width: 15px; object-position: 0px 2px; overflow: visible;">
+                </p>
+                <p>&nbsp;&nbsp;&nbsp; love it <br> &nbsp;&nbsp;&nbsp; ill try some things ;) <br>
                 </p>
               </div>
-              <div class="box" style="margin-top: 10px">
-                <script src="//counter.websiteout.net/js/8/0/0/1"></script>
+              <p>I worked on it for about 40 minutes, replaced his piano preset with mine and ended up with this.</p>
+              <audio controls controlsList="nodownload">"
+                <source src="/MusicJournal/audio/jxsnpiano2/jxsnpiano2v1.mp3" type="audio/mp3">
+              </audio>
+              <br>
+              <br>
+              <div id="discord">
+                <img style="vertical-align: middle; margin-right: 5px;" src="/MusicJournal/images/jxsn.webp"
+                  class="jxsnicon">
+                <p style="display: inline;">
+                  <b>jxsn</b>
+                </p>
+                <small> - 06/19/2023 1:39 PM</small>
+                </p>
+                <p>&nbsp;&nbsp;&nbsp; sickk! <br> &nbsp;&nbsp;&nbsp; nice and moody <br>
+                </p>
               </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </body>
+              <p>I then changed the structure and tweaked some velocities before sending v2 with some very minor
+                changes.</p>
+              <audio controls controlsList="nodownload">"
+                <source src="/MusicJournal/audio/jxsnpiano2/jxsnpiano2v2.mp3" type="audio/mp3">
+              </audio>
+              <br>
+              <br>
+              <p>That's all for now, I exported the stems and sent them out.</p>
+              <p>I'll update when I get stems back.</p>
+            </div>
+
+          </td>
+          <td id="menutd">
+            <div w3-include-html="/content.html"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+<script>
+  includeHTML();
+</script>
+
 </html>
