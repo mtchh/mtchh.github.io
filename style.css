@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+#container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: black;
+  font-family: "Karla", monospace;
+  font-size: 14px;
+  background-image: url("/images/bg.webp");
+  background-size: stretch;
+  background-repeat: repeat-x repeat-y;
+  -webkit-background-size: stretch;
+}
+
+.gradient-text {
+  background-image: linear-gradient(45deg, #ffb619, #ff641c);
+  background-clip: text;
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.gradient-text2 {
+  background-image: linear-gradient(45deg, #54ff9b, rgb(48, 255, 151));
+  background-clip: text;
+  background-size: 100%;
+  background-repeat: repeat;
+  text-align: center;
+  font-size: 15px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+/* Type Colours */
+/* Type Colours */
+/* Type Colours */
+
+h1 {
+  color: aquamarine;
+}
+
+strong {
+  color: aquamarine;
+}
+
+red {
+  color: red;
+}
+
+green {
+  color: greenyellow;
+}
+
+/* Link Colours */
+/* Link Colours */
+/* Link Colours */
+
+a.class1 {
+  color: rgb(30, 215, 96);
+  text-decoration: none;
+}
+a.class1:hover {
+  color: rgb(32, 143, 73);
+  text-decoration: none;
+}
+
+a.class2 {
+  color: rgb(252, 134, 25);
+  text-decoration: none;
+}
+a.class2:hover {
+  color: rgb(150, 82, 19);
+  text-decoration: none;
+}
+
+a.class3 {
+  color: rgb(255, 38, 172);
+  text-decoration: none;
+}
+a.class3:hover {
+  color: rgb(150, 23, 101);
+  text-decoration: none;
+}
+
+a.journallink {
+  color: rgb(121, 82, 212);
+  text-decoration: none;
+}
+a.journallink:hover {
+  color: rgb(119, 53, 163);
+}
+
+a.navlink {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a.navlink:hover {
+  color: rgb(209, 209, 209);
+  text-decoration: none;
+}
+
+/* Icons */
+/* Icons */
+/* Icons */
+
+.duoicon {
+  vertical-align: sub;
+  display: inline;
+}
+
+.jxsnicon {
+  border-radius: 100px;
+  height: 30px;
+}
+
+#discord {
+  background-color: #131313;
+  width: 270px;
+  height: 85px;
+  padding: 12px;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #252525;
+}
+
+/* Boxes and Tables */
+/* Boxes and Tables */
+/* Boxes and Tables */
+
+.box {
+  background-color: #000000;
+  border: 2px solid #313131;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 15px;
+  margin: 4px;
+}
+
+table {
+  margin: 0 auto;
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+  padding-top: 10px;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: top;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+#maintd {
+  max-width: 650px;
+  vertical-align: baseline;
+}
+
+#menutd {
+  max-width: 190px;
+  min-width: 171px;
+}
+
+#mainbox {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+/* Scrolling */
+/* Scrolling */
+/* Scrolling */
+
+.scrollingcontainer {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling {
+  animation: marquee 4s linear infinite;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Duoingo Streak Counter */
+/* Duoingo Streak Counter */
+/* Duoingo Streak Counter */
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.boxcounter {
+  animation: counter 2s 1 forwards;
+  counter-reset: num var(--num);
+  font-weight: bold;
+  display: inline;
+}
+.boxcounter::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 5;
+  }
+}
+
+/* Music Box */
+/* Music Box */
+/* Music Box */
+
+#songlink {
+  color: white;
+  text-decoration: none;
+}
+
+#musicbox {
+  height: 60px;
+}
+
+#albumcover {
+  border: 1px solid #383838;
+  float: left;
+  margin-right: 10px;
+}
+
+/* Music Player */
+/* Music Player */
+/* Music Player */
+
+audio {
+  width: 607px;
+  height: 25px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(143, 198, 214);
+}
