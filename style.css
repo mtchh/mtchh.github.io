@@ -118,6 +118,35 @@ a.spotifylink:hover {
   text-decoration: none;
 }
 
+a.netflixlink {
+  color: rgb(215, 36, 30);
+  text-decoration: none;
+}
+
+a.netflixlink:hover {
+  color: rgb(128, 25, 18);
+  text-decoration: none;
+}
+
+a.facebooklink {
+  color: rgb(30, 95, 215);
+  text-decoration: none;
+}
+
+a.facebooklink:hover {
+  color: rgb(18, 88, 128);
+  text-decoration: none;
+}
+
+a.redditlink {
+  color: rgb(215, 104, 30);
+  text-decoration: none;
+}
+
+a.redditlink:hover {
+  color: rgb(158, 71, 21);
+  text-decoration: none;
+}
 /* Icons */
 /* Icons */
 /* Icons */
