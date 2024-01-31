@@ -147,6 +147,16 @@ a.redditlink:hover {
   color: rgb(158, 71, 21);
   text-decoration: none;
 }
+
+a.ytlink {
+  color: rgb(255, 37, 37);
+  text-decoration: none;
+}
+
+a.ytlink:hover {
+  color: rgb(124, 14, 14);
+  text-decoration: none;
+}
 /* Icons */
 /* Icons */
 /* Icons */
