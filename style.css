@@ -133,6 +133,11 @@ a.ytlink:hover {
   color: rgb(124, 14, 14);
   text-decoration: none;
 }
+
+.box3:hover {
+  background-color: #535353;
+  text-decoration: none;
+}
 /* Icons */
 /* Icons */
 /* Icons */
@@ -203,7 +208,7 @@ tr {
 }
 
 #maintd {
-  max-width: 300px;
+  max-width: 306px;
   vertical-align: baseline;
   width: 300px;
 }
