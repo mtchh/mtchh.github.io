@@ -10,7 +10,7 @@ body {
   color: black;
   font-family: "Karla", monospace;
   font-size: 14px;
-  background-image: url("/images/bg.webp");
+  background-image: url("./images/bg.webp");
   background-size: stretch;
   background-repeat: repeat-x repeat-y;
   -webkit-background-size: stretch;
